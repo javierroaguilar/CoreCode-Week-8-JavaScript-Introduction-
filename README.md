@@ -99,3 +99,19 @@ function evenOrOdd(number) {
     return "Odd";
 }
  ```
+
+## Challenge 5 - 
+Code War link
+<https://www.codewars.com/kata/5c8bfa44b9d1192e1ebd3d15/train/javascript>
+
+ ``` javascript
+function warnTheSheep(queue) {
+  for (let i = queue.length-1; i>=0; i--)  {
+    let x = "wolf"
+    if ((queue[queue.length-1] == x)|| (queue.length == 1)) {
+        return "Pls go away and stop eating my sheep";
+        } else
+    if  (queue[i] == x) {
+      return "Oi! Sheep number " + (queue.length - (i+1)) + "! You are about to be eaten by a wolf!" 
+    } } }
+```
