@@ -88,3 +88,14 @@ function calculate(num1, operation, num2) {
         }
         }
  ``` 
+
+## Challenge 4 - Odd or even
+
+ ``` javascript
+function evenOrOdd(number) {
+  if (number % 2 == 0) {
+    return "Even";
+  } else 
+    return "Odd";
+}
+ ```
