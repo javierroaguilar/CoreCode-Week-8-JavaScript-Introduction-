@@ -159,3 +159,40 @@ function likes(names) {
   }
 }
 ```
+
+## Challenge 8 - Bit counter
+Code War Challenge 
+<https://www.codewars.com/kata/526571aae218b8ee490006f4/train/javascript>
+```javascript
+var countBits = function(n) {
+  let x = Math.abs(n);
+  let binar = x.toString(2);
+  let z = 0; 
+  for (let i = 0; i<binar.length; i++){
+    if (binar[i] === '1') z++
+  }
+  return z;
+};
+```
+
+
+## Challenge 9 - Your order 
+Codewar link
+<https://www.codewars.com/kata/55c45be3b2079eccff00010f/train/javascript>
+
+``` javascript
+function order(words){
+    let newWords = words.split(' ');
+    let number = [];
+    for (let i = 0; i<newWords.length+1; i++){
+      for (let p = 0; p<newWords.length; p++){
+        if (newWords[p].indexOf(i) >=0){
+          number.push(newWords[p]); 
+      }
+        }
+      }
+  return number.join(' ')
+  }
+  ```
+  
+  ## Challenge 10 - 
