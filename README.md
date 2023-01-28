@@ -119,3 +119,43 @@ function warnTheSheep(queue) {
 ## Challenge 6 - Morse Code
 Code War Link 
 <https://www.codewars.com/kata/54b724efac3d5402db00065e/train/javascript>
+
+```javascript
+decodeMorse = function(morseCode){
+  let result = [];
+  let palabra = morseCode.trim().split('   ');
+  let letras = [];
+  for (let i = 0; i < palabra.length ; i++){
+    letras = palabra[i].split(' ');
+    for (let p = 0; p<letras.length; p++){
+      letras [p] = MORSE_CODE[letras[p]];
+    }
+    result.push(letras.join(''));
+  }
+  return result.join(' ').trim();
+}
+```
+
+## Challenge 7 - Who likes it?
+Code War Link
+<https://www.codewars.com/kata/5266876b8f4bf2da9b000362/train/javascript>
+
+``` javascript
+function likes(names) {
+  let n;
+  if (names.length >= 4){
+    n = names.slice(0,2);
+    return `${n[0]}, ${n[1]} and ${names.length-2} others like this`
+  } else 
+    switch (names.length){
+      case 3: 
+    return `${names[0]}, ${names[1]} and ${names[2]} like this`
+    case 2: 
+    return `${names[0]} and ${names[1]} like this`
+    case 1: 
+    return `${names[0]} likes this`
+    case 0: 
+    return `no one likes this`
+  }
+}
+```
