@@ -195,4 +195,23 @@ function order(words){
   }
   ```
   
-  ## Challenge 10 - 
+  ## Challenge 10 - Duplicate Count 
+  Codewar link
+  <https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1/train/javascript>
+  
+```javascript
+function duplicateCount(text){
+  text = text.toLowerCase();
+  let value;
+  let count = 0;
+  for (let i=0; i<text.length; i++){
+    if (text.indexOf(text[i]) !== text.lastIndexOf(text[i])){
+      count++;
+      text = text.replace(new RegExp(text[i], 'g'),'');
+      i = i-1;
+    }
+  }
+    return count;
+  } 
+  ```
+  
